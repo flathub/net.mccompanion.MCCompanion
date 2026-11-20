@@ -38,7 +38,7 @@ modules:
   build-commands:
   - flutter create --platforms=linux --project-name mccompanion --no-pub .
   - flutter pub get --offline
-  - flutter build linux --release --no-pub --build-name=5.2.0 --build-number=427
+  - flutter build linux --release --no-pub --build-name=5.2.0 --build-number=429
   - python3 scripts/set_release_entry.py 5.2.0 2026-11-20
   - install -Dm755 "$BUNDLE_PATH/MCCompanion" /app/bin/MCCompanion
   - cp -r "$BUNDLE_PATH/lib" "$BUNDLE_PATH/data" /app/bin/
@@ -48,5 +48,5 @@ modules:
   sources:
   - type: git
     url: https://github.com/MCCORG/MCCompanion.git
-    commit: c979f1fa21f42b1f5598e9ca453bf48f690a7f53
+    commit: 701bb87bd00b797435cf8d6ab1ca7618b77a67b6
   - pubspec-sources.json
